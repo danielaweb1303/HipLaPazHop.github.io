@@ -1,0 +1,107 @@
+body { 
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 1000;
+    height: 100vh;
+    background-image: url('img/artf.jpeg');
+    background-size: cover; /* Hace que la imagen cubra toda el área */
+    
+}
+
+
+header {
+    background: black;
+    color: white;
+    padding: 10px ;
+    text-align: center;
+    font-family: 'Calligraffitti', cursive;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-family: 'Calligraffitti', cursive;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #ffcc00; /* Cambia a un color amarillo dorado */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.columna {
+    flex: 1; /* Cada columna ocupa el mismo espacio */
+    margin: 0 10px; /* Espaciado entre columnas */
+    padding: 20px;
+}
+ h2 {
+    font-size: 35px;
+    color:#ffffff;
+    font-family: 'Calligraffitti', cursive;
+  }
+  p {
+    color: #ffffff;
+  }
+
+  .btn-btn-secondary {
+    border-color: #ffffff;
+    color: #ffffff;
+    border-radius: 20%; 
+  }
+  .btn-btn-secondary:hover {
+    color: #ffcc00;
+}
+
+.container {
+    width: 100%; /* Utiliza el 100% del ancho disponible */
+    max-width: 1200px; /* Un ancho máximo para pantallas grandes */
+  }
+  /* Estilos por defecto */
+body {
+    font-size: 16px;
+  }
+  
+  /* Pantallas más pequeñas */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px; /* Reduce el tamaño de la fuente */
+    }
+  }
+  
+  /* Pantallas muy pequeñas */
+  @media (max-width: 480px) {
+    body {
+      font-size: 12px; /* Aún más pequeño */
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+  }
+  
+  .item {
+    flex: 1 1 200px; /* Crece, se encoge y tiene un ancho mínimo */
+    margin: 10px; /* Espaciado entre elementos */
+  }
+  img {
+    max-width: 100%; /* Las imágenes no excederán el ancho de su contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+  }

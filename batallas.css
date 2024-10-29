@@ -1,0 +1,176 @@
+body { 
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 1000;
+    height: 100vh;
+    background-color: black;
+    background-size: cover; /* Hace que la imagen cubra toda el área */
+    
+}
+
+
+header {
+    background: black;
+    color: white;
+    padding: 10px ;
+    text-align: center;
+    font-family: 'Calligraffitti', cursive;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-family: 'Calligraffitti', cursive;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #ffcc00; /* Cambia a un color amarillo dorado */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+.container {
+    background-image: url(img/vf.jpeg);
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    right: 100%;
+    text-align: center; /* Centra el texto */
+}
+
+.video-estilizado {
+    width: 1000%; /* Ancho del video */
+    width: 1000px; /* Ancho del video */
+    height: 380px; /* Altura del video */
+    max-width: 1050px; /* Ancho máximo */
+}
+.tex1 {
+    color: white;
+    font-size: 50px;
+    margin: 0 15px;
+    text-decoration: none;
+    font-family: 'Calligraffitti', cursive;
+    text-align: left;
+}
+.text-1 {
+    color: rgb(61, 61, 61);
+    font-size: 50px;
+    margin: 0 15px;
+    text-decoration: none;
+    font-family: 'Calligraffitti', cursive;
+    text-align: left;
+}
+.lead1 {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-family: 'Calligraffitti', cursive;
+    text-align: left;
+    white-space: pre-line;
+}
+.tex2 {
+    color: white;
+    font-size: 50px;
+    margin: 0 15px;
+    text-decoration: none;
+    font-family: 'Calligraffitti', cursive;
+    text-align: right;
+}
+.text-2 {
+    color: rgb(61, 61, 61);
+    font-size: 50px;
+    margin: 0 15px;
+    text-decoration: none;
+    font-family: 'Calligraffitti', cursive;
+    text-align: right;
+}
+.lead2 {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-family: 'Calligraffitti', cursive;
+    text-align: right;
+}
+.img1 {
+    max-width: 25%;  /* No exceder el ancho del contenedor */
+    height: auto;
+      margin-top: -140px;
+    float: right;
+    margin-right: 30px; /* Espacio a la izquierda, opcional */
+}
+
+.img2 {
+    max-width: 25%;  /* No exceder el ancho del contenedor */
+    height: auto;
+    margin-top: -140px;
+    float: left;
+    margin-left: 30px; /* Espacio a la izquierda, opcional */
+}
+.contaainer {
+    display: flex;
+    flex-direction: column;
+}
+.item {
+    padding: 10px;
+}
+
+.columna {
+    padding: 10px;
+}
+
+.izquierda {
+    flex: 1; /* La columna izquierda ocupará espacio */
+}
+
+.derecha {
+    flex: 1; /* La columna derecha también ocupará espacio */
+}
+
+.container {
+    width: 100%; /* Utiliza el 100% del ancho disponible */
+    max-width: 1200px; /* Un ancho máximo para pantallas grandes */
+  }
+  /* Estilos por defecto */
+body {
+    font-size: 16px;
+  }
+  
+  /* Pantallas más pequeñas */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px; /* Reduce el tamaño de la fuente */
+    }
+  }
+  
+  /* Pantallas muy pequeñas */
+  @media (max-width: 480px) {
+    body {
+      font-size: 12px; /* Aún más pequeño */
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+  }
+  
+  .item {
+    flex: 1 1 200px; /* Crece, se encoge y tiene un ancho mínimo */
+    margin: 10px; /* Espaciado entre elementos */
+  }
+  img {
+    max-width: 100%; /* Las imágenes no excederán el ancho de su contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+  }

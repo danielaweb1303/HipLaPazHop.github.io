@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hip La Paz Hop</title>
+</head>
+<body>
+    <header>
+        <img src="img/image.png" alt="Logo Hip Hop Vibes" class="logo"width="10%"style="float: left; margin-left: 10px;">
+        <h1>Hip Paceño Hop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="batallas.html">Batallas</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Bienvenido al Mundo del Hip Paceño Hop</h2>
+            <div class="slider">
+                <div class="slides">
+                    <img src="img/caru1.jpg" alt="Hip Hop 1">
+                    <img src="img/carru2.jpg" alt="Hip Hop 2">
+                    <img src="img/carru3.jpg" alt="Hip Hop 3">
+                    <div class="text">
+                        <h1>La Juventud Rapera</h1>
+                        <p>La juventud actual se inclinan por este genero ya que es muy abierto
+                        y de mucha inspiracion y implica a que los jovenes abran su mente.</p>
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+        
+        <section id="artists">
+            <h2>Artistas Destacados</h2>
+            <ul>
+                <div class="container">
+                    <div class="columna columna1">
+                        <img class="rounded-circle" src="img/greco.png" alt="Generic placeholder image"width="75%" width="140" height="160">
+                        <h2>Greco Mc</h2>
+                        <p>Rapero Boliviano dedicado a hacer freestyle en las calles participo de 
+                        muchos eventos importantes en su pais y fuera de el se lo conoce como Greco mc pero su nombre es Gabriel Sanchez.</p>
+                    </div>
+                    <div class="columna columna2">
+                        <img class="rounded-circle" src="img/k.png" alt="Generic placeholder image"width="70%" width="140" height="160">
+            <h2>Kaiser Mc</h2>
+            <p>Es un artista urbano Chileno dedicado al freestyle participo de varios eventos importantes de rap en su pais 
+                y fuera de el gano muchos de los eventos por lo cual llego a ser conocido en muchos paises.</p>
+                    </div>
+                    <div class="columna columna3">
+                        <img class="rounded-circle" src="img/c.png"alt="Generic placeholder image"width="70%" width="140" height="160">
+                        <h2>Vale Mc</h2>
+                        <p>Rapero Boliviano dedicado a hacer freestyle en las calles participo de muchos eventos importantes en su pais 
+                        y fuera de el se lo conoce como Vale mc pero su nombre es Cristian Valencia.</p>
+                    </div>
+                </div>        
+        </section>
+        
+        <section id="eventos-mes">
+            <h2>Eventos Destacados</h2>
+            <ul>
+                <div class="container-events">
+                    <div class="columna columna1">
+                    <p><img class="even" src="img/event1.png" alt="Generic placeholder image"width="60%" ></p>
+                    <p></p><img class="even" src="img/event4.jpg" alt="Generic placeholder image"width="60%" ></p>
+                    <p></p><img class="even" src="img/event6.png" alt="Generic placeholder image"width="60%" ></p>
+                    </div>
+                    <div class="columna columna2">
+                        <p><img class="even" src="img/event5.jpeg" alt="Generic placeholder image"width="60%" ></p>
+                        <p></p><img class="even" src="img/event3.jpg" alt="Generic placeholder image"width="60%" ></p>
+                        <p></p><img class="even" src="img/event2.jpg" alt="Generic placeholder image"width="60%" ></p>
+                    </div>
+                </div>
+                <div class="formulario">
+                <h2>Registrate</h2>
+
+<p>Regitrate al evento de tu elección</p>
+
+<form action="/action_page.php">
+  
+  <input type="text" id="fname" name="fname" value="Ingrese su nombre"><br>
+  <br>
+  <input type="text" id="lname" name="lname" value="Ingrese el Evento"><br><br>
+  <input type="ENVIAR" value="ENVIAR">
+  <input type="BORRAR" value="BORRAR">
+</form> 
+
+<p>Gracias por partisipar HIP LA PAZ HOP te desea suerte en tu evento.</p>
+</div>
+            </ul>
+        </section>
+        
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos en: hipLaPazHop@gmail.com</p>
+            <p>Puedes contactarnos al cel: 75242048</p>
+            <p>Puedes contactarnos entodas nuestras redes con: HipLaPazHop@oficial</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hip Paceño Hop l Dicha pagina web va dedicado a Paolo Andres Copali Miranda</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.querySelectorAll('.slides img');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 3000); // Cambia la imagen cada 3 segundos
+        }
+
+        function changeSlide(n) {
+            slideIndex += n - 1;
+            showSlides();
+        }
+    </script>
+</body>
+</html>
